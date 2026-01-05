@@ -1,3 +1,4 @@
+import tensorflow as tf
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -58,3 +59,4 @@ test = np.expand_dims(test, axis=1)
 
 pred = model.predict(test)
 print("Test prediction:", le.inverse_transform([np.argmax(pred)])[0])
+
