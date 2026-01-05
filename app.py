@@ -1,3 +1,5 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from flask import Flask, render_template, request, jsonify
 import numpy as np
 import tensorflow as tf
@@ -87,3 +89,4 @@ def submit():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
